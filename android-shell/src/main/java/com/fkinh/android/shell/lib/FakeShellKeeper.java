@@ -36,4 +36,8 @@ public class FakeShellKeeper {
         ourInstance = null;
     }
 
+    public void setCallBack(OnExecuteCallback callBack){
+        mShell.setOnExecuteCallback(callBack);
+    }
+
 }

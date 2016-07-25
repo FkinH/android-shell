@@ -49,6 +49,7 @@ public class FakeShellImpl implements FakeShell{
             mError = process.getErrorStream();
             mWrite = process.getOutputStream();
             mCallback = new OnExecuteCallback() {
+
                 @Override
                 public void onSuccess(String buffer) {
                     Log.e("LOG", buffer);
